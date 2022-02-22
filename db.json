@@ -1,0 +1,230 @@
+{
+  "posts": [
+    {
+      "id": "24",
+      "title": "Samsung Galaxy A72",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521257/apiimg/ioibvh4sjaf16txubkzn.jpg",
+      "desc": "hơi đắt",
+      "price": "20.000$",
+      "soluong": "20"
+    },
+    {
+      "id": "25",
+      "title": "Samsung Galaxy Note9",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645520155/apiimg/o290iriyjd7euwo3qu7s.jpg",
+      "desc": "Đẹp ",
+      "price": "200.000$",
+      "soluong": "200"
+    },
+    {
+      "title": "Samsung Galaxy Note10",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521191/apiimg/h73z6zhyofaedxujbqae.jpg",
+      "desc": "eeeeeeee",
+      "price": "20$",
+      "soluong": "100",
+      "id": "3ay9sbf"
+    },
+    {
+      "title": "Samsung Galaxy Note20",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521375/apiimg/php0frgftowvm1gyws06.jpg",
+      "desc": "Samsung Galaxy Note20",
+      "price": "500$",
+      "soluong": "50",
+      "id": "4a-InyL"
+    },
+    {
+      "title": "Samsung Galaxy Note21",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521408/apiimg/tscdylwxeith96nkwqfq.jpg",
+      "desc": "Samsung Galaxy Note21",
+      "price": "600$",
+      "soluong": "60",
+      "id": "zxrLGpJ"
+    },
+    {
+      "title": "Samsung Galaxy S22",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521443/apiimg/xdkx6whrrcuj5uj1ycsc.jpg",
+      "desc": "Samsung Galaxy S22",
+      "price": "700$",
+      "soluong": "70",
+      "id": "NZSgVEs"
+    },
+    {
+      "title": "Samsung Galaxy S20 Ultra",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521474/apiimg/p6wcngtymwvgplwenfd1.jpg",
+      "desc": "Samsung Galaxy S20 Ultra",
+      "price": "800$",
+      "soluong": "80",
+      "id": "idvPG08"
+    },
+    {
+      "title": "Samsung Galaxy Zfip3",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521510/apiimg/rszg7z59zkdxn60ufy6i.jpg",
+      "desc": "Samsung Galaxy Zfip3",
+      "price": "900$",
+      "soluong": "90",
+      "id": "P_Jb-9t"
+    },
+    {
+      "title": "Samsung Galaxy z fold 3",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521617/apiimg/dapd0iufdqy6xxnag1pl.jpg",
+      "desc": "Samsung Galaxy z fold 3",
+      "price": "1000$",
+      "soluong": "100",
+      "id": "7zxflq9"
+    },
+    {
+      "title": "Samsung đời đầu",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521694/apiimg/yv12skmvsd4ezjaum3fe.jpg",
+      "desc": "Samsung đời đầu",
+      "price": "6.000.000$",
+      "soluong": "5",
+      "id": "dH_Xr5C"
+    },
+    {
+      "title": "Galaxy watch 3titanium",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521794/apiimg/r0zisxs5461hjcfzpajk.jpg",
+      "desc": "Galaxy watch 3titanium",
+      "price": "10000000000000000$",
+      "soluong": "10",
+      "id": "cWF-z04"
+    },
+    {
+      "title": "Tai nghe buds live",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521866/apiimg/dqmrjeaq8yp86it0ac2h.jpg",
+      "desc": "đẹp đẹpđẹp đẹp đẹp đẹp",
+      "price": "2.000$",
+      "soluong": "60",
+      "id": "zqUvtta"
+    }
+  ],
+  "catePosts": [
+    {
+      "id": "1",
+      "name": "Danh muc bai viet 1"
+    },
+    {
+      "id": "2",
+      "name": "Danh muc bai viet 2"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$xyrnKzsDIKkElu/SRLdJ/utCbltwLFgitvwOKFKpMeWGqgYHbZBSG",
+      "id": 1
+    },
+    {
+      "email": "member@gmail.com",
+      "password": "$2a$10$9/vitRDFQ52tk03gbOSErOaGLAtdGW0w0yA8NvUEk7zRzSGTdHKsO",
+      "id": 2
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "$2a$10$rttHtPa6nhsgT.b5.PGQe.sV/GhfWXpe3ZXTkIWPfvL57KEESnLUm",
+      "id": 3
+    },
+    {
+      "email": "linhhuong123@gmail.com",
+      "password": "$2a$10$51jhDTynGV6TtrwGMeiZeOqiHI./nLa557F90HEiup4gzpROQ4LMW",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": "24",
+      "title": "Samsung Galaxy A72",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521257/apiimg/ioibvh4sjaf16txubkzn.jpg",
+      "desc": "hơi đắt",
+      "price": "20.000$",
+      "soluong": "20"
+    },
+    {
+      "id": "25",
+      "title": "Samsung Galaxy Note9",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645520155/apiimg/o290iriyjd7euwo3qu7s.jpg",
+      "desc": "Đẹp ",
+      "price": "200.000$",
+      "soluong": "200"
+    },
+    {
+      "title": "Samsung Galaxy Note10",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521191/apiimg/h73z6zhyofaedxujbqae.jpg",
+      "desc": "eeeeeeee",
+      "price": "20$",
+      "soluong": "100",
+      "id": "3ay9sbf"
+    },
+    {
+      "title": "Samsung Galaxy Note20",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521375/apiimg/php0frgftowvm1gyws06.jpg",
+      "desc": "Samsung Galaxy Note20",
+      "price": "500$",
+      "soluong": "50",
+      "id": "4a-InyL"
+    },
+    {
+      "title": "Samsung Galaxy Note21",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521408/apiimg/tscdylwxeith96nkwqfq.jpg",
+      "desc": "Samsung Galaxy Note21",
+      "price": "600$",
+      "soluong": "60",
+      "id": "zxrLGpJ"
+    },
+    {
+      "title": "Samsung Galaxy S22",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521443/apiimg/xdkx6whrrcuj5uj1ycsc.jpg",
+      "desc": "Samsung Galaxy S22",
+      "price": "700$",
+      "soluong": "70",
+      "id": "NZSgVEs"
+    },
+    {
+      "title": "Samsung Galaxy S20 Ultra",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521474/apiimg/p6wcngtymwvgplwenfd1.jpg",
+      "desc": "Samsung Galaxy S20 Ultra",
+      "price": "800$",
+      "soluong": "80",
+      "id": "idvPG08"
+    },
+    {
+      "title": "Samsung Galaxy Zfip3",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521510/apiimg/rszg7z59zkdxn60ufy6i.jpg",
+      "desc": "Samsung Galaxy Zfip3",
+      "price": "900$",
+      "soluong": "90",
+      "id": "P_Jb-9t"
+    },
+    {
+      "title": "Samsung Galaxy z fold 3",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521617/apiimg/dapd0iufdqy6xxnag1pl.jpg",
+      "desc": "Samsung Galaxy z fold 3",
+      "price": "1000$",
+      "soluong": "100",
+      "id": "7zxflq9"
+    },
+    {
+      "title": "Samsung đời đầu",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521694/apiimg/yv12skmvsd4ezjaum3fe.jpg",
+      "desc": "Samsung đời đầu",
+      "price": "6.000.000$",
+      "soluong": "5",
+      "id": "dH_Xr5C"
+    },
+    {
+      "title": "Galaxy watch 3titanium",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521794/apiimg/r0zisxs5461hjcfzpajk.jpg",
+      "desc": "Galaxy watch 3titanium",
+      "price": "10000000000000000$",
+      "soluong": "10",
+      "id": "cWF-z04"
+    },
+    {
+      "title": "Tai nghe buds live",
+      "img": "http://res.cloudinary.com/dybqlreqq/image/upload/v1645521866/apiimg/dqmrjeaq8yp86it0ac2h.jpg",
+      "desc": "đẹp đẹpđẹp đẹp đẹp đẹp",
+      "price": "2.000$",
+      "soluong": "60",
+      "id": "zqUvtta"
+    }
+  ]
+}

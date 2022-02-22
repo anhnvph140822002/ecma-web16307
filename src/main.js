@@ -1,79 +1,47 @@
 import Navigo from "navigo";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
-import ProductPage from "./pages/product";
-import DetailNewsPage from "./pages/detailNews";
-import DashBoardPage from "./pages/admin/dashboard";
-import AddNewsPage from "./pages/admin/news/add";
-import AdminNewsPage from "./pages/admin/news";
-import SignUp from "./pages/signup";
-import NewList from "./components/admin/NewList";
+import ProductPage from "./pages/products";
+import AdminPosts from "./pages/posts";
+import AdminAddPosts from "./pages/posts/add";
+import AdminEditposts from "./pages/posts/edit";
+import Signup from "./pages/signup";
+import Signin from "./pages/signin";
+import ProductDetailPage from "./pages/products/detail";
+import CartPage from "./pages/cart";
+import Contact from "./pages/contact";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
-const print = (content) => {
-    document.getElementById("app").innerHTML = content;
+const print = async (content, id) => {
+    document.getElementById("app").innerHTML = await content.render(id);
+    if (content.afterRender) await content.afterRender(id);
 };
-
-router.on({
-    "/": () => {
-        print(HomePage.render());
-    },
-    "/about": () => {
-        print(AboutPage.render());
-    },
-    "/product": () => {
-        print(ProductPage.render());
-    },
-    "/news/:id": ({ data }) => {
-        const { id } = data;
-        print(DetailNewsPage.render(id));
-    },
-    "/admin/dashboard": () => {
-        print(DashBoardPage.render());
-    },
-    "/admin/news": () => {
-        print(AdminNewsPage.render());
-    },
-    "/admin/news/add": () => {
-        console.log("12");
-        print(AddNewsPage.render());
-    },
-    "/Signup": () => {
-        print(SignUp.render());
-    },
-    "/admin/new/list": () => {
-        print(NewList.render());
+router.on("/admin/*", () => {}, {
+    before: (done) => {
+        if (localStorage.getItem("user")) {
+            console.log("ahihi");
+            const userId = JSON.parse(localStorage.getItem("user")).id;
+            if (userId === 1) {
+                done();
+            } else {
+                document.location.href = "/";
+            }
+        }
     },
 });
+router.on({
+    "/": () => print(HomePage),
+    "/about": () => print(AboutPage),
+    "/products": () => print(ProductPage),
+    "/products/:id": ({ data }) => print(ProductDetailPage, data.id),
+    "/admin/posts": () => print(AdminPosts),
+    "/admin/posts/add": () => print(AdminAddPosts),
+    "/admin/posts/:id/edit": ({ data }) => print(AdminEditposts, data.id),
+    "/signup": () => print(Signup),
+    "/signin": () => print(Signin),
+    "/cart": () => print(CartPage),
+    "/products/detail": () => print(ProductDetailPage),
+    "/contact": () => print(Contact),
+});
 router.resolve();
-
-// class KhuanBanh {
-//     constructor(ten, duong, bot) {
-//         this.ten = ten;
-//         this.duong = duong;
-//         this.bot = bot;
-//     }
-
-//     showInfo() {
-//         console.log(`
-//             Ten banh: ${this.ten}
-//             Luong Duong: ${this.duong}
-//             Luong Bot: ${this.bot}
-//         `);
-//     }
-// }
-
-// const banhDeo = new KhuanBanh("Banh Deo", 1, 5);
-// const banhNuong = new KhuanBanh("Banh Nuong", 3, 2);
-// banhDeo.showInfo();
-// banhNuong.showInfo();
-
-// const person = { // object litteral
-//     name: "Dat",
-//     run() {
-//         console.log("Run method");
-//     },
-// };
-// console.log(person.name);
-// person.run();

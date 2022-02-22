@@ -1,11 +1,11 @@
 import toastr from "toastr";
-import { signup } from "../api/user";
+import { signin } from "../api/user";
 import "toastr/build/toastr.min.css";
 import Header from "../components/header";
 import Banner from "../components/banner";
 import Footer from "../components/footer";
 
-const Signup = {
+const Signin = {
     render() {
         return `
         <div class="max-w-5xl mx-auto">
@@ -16,10 +16,10 @@ const Signup = {
                    ${Banner.render()}
                 </div>
                 <div class="news">
-                    <form id="formSignup">
+                    <form id="formSignin">
                 <input type="email" id="email" placeholder="your email" class="border border-black"/>
                 <input type="password" id="password" placeholder="your password" class="border border-black"/>
-                <button>Đăng ký</button>
+                <button>Đăng nhập</button>
             </form>
                 </div>
                 ${Footer.render()}
@@ -29,18 +29,21 @@ const Signup = {
         `;
     },
     afterRender() {
-        const formSignup = document.querySelector("#formSignup");
-        formSignup.addEventListener("submit", async (e) => {
+        const formSignin = document.querySelector("#formSignin");
+        formSignin.addEventListener("submit", async (e) => {
             e.preventDefault();
             try {
-                const { data } = await signup({
+                const { data } = await signin({
                     email: document.querySelector("#email").value,
                     password: document.querySelector("#password").value,
                 });
                 if (data) {
-                    toastr.success("Đăng ký thành công, chuyển trang sau 2s");
+                    console.log(data.user);
+                    // Lưu thông tin user vào localStorage
+                    localStorage.setItem("user", JSON.stringify(data.user));
+                    toastr.success("Đăng nhập thành công, chuyển trang sau 2s");
                     setTimeout(() => {
-                        document.location.href = "/signin";
+                        document.location.href = "/";
                     }, 2000);
                 }
             } catch (error) {
@@ -49,4 +52,4 @@ const Signup = {
         });
     },
 };
-export default Signup;
+export default Signin;
