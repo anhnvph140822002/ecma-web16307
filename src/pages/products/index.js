@@ -15,7 +15,7 @@ const ProductPage = {
                    ${Banner.render()}
                 </div>
                 <div class="news">
-                <div class="row grid grid-cols-4">
+                <div class="row grid grid-cols-4"  style="margin-left: 200px; margin-right: 200px;">
                 ${response.data.map((product) => `
                 <div class="col-4">
                     <a href="/products/${product.id}">

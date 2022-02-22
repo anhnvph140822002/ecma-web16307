@@ -2,7 +2,6 @@ import toastr from "toastr";
 import { signup } from "../api/user";
 import "toastr/build/toastr.min.css";
 import Header from "../components/header";
-import Banner from "../components/banner";
 import Footer from "../components/footer";
 
 const Signup = {
@@ -13,14 +12,33 @@ const Signup = {
                     ${Header.render()}
                 </div>
                 <div class="banner">
-                   ${Banner.render()}
+                
                 </div>
                 <div class="news">
-                    <form id="formSignup">
-                <input type="email" id="email" placeholder="your email" class="border border-black"/>
-                <input type="password" id="password" placeholder="your password" class="border border-black"/>
-                <button>Đăng ký</button>
-            </form>
+                <div class="account-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="images/samsung1.jpg" width="100%">
+                        </div>
+        
+                        <div class="col-2">
+                            <div class="form-container">
+                                <div class="form-btn">
+                                    <span onclick="register()">Signup</span>
+                                    <hr id="Indicator">
+                                </div>
+        
+                                <form id="RegForm">
+                            <input type="email" id="email" placeholder="your email">
+                            <input type="password" id="password" placeholder="your password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 </div>
                 ${Footer.render()}
             </div>
@@ -28,6 +46,7 @@ const Signup = {
         
         `;
     },
+
     afterRender() {
         const formSignup = document.querySelector("#formSignup");
         formSignup.addEventListener("submit", async (e) => {
