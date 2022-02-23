@@ -19,7 +19,8 @@ const AdminAddPosts = {
                         <textarea name="" class="border border-black" id="desc-post" cols="30"></textarea> <br />
                         <button class="bg-blue-500 inline-block px-3 py-4">add post</button>
                         </form>
-                        
+                        <br>
+                        <button><a href="/admin/posts">BACK</a></button>
                     </div>
             
         `;

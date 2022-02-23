@@ -22,6 +22,7 @@ const AdminEditposts = {
                         <textarea name="" class="border border-black" id="desc-post" cols="30" rows="10">${data.desc}</textarea> <br />
                         <button class="bg-blue-500 inline-block px-3 py-4">edit post</button>
                     </form>
+                    <button><a href="/admin/posts">BACK</a></button>
                 </div>
         `;
     },

@@ -26,7 +26,7 @@ const Contact = {
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="col1">
-                <form action="/action_page.php">
+                <form action="">
                     <label for="fname">Họ tên</label>
                     <input type="text" id="fname" name="firstname" placeholder="Họ tên của bạn..">
                     <label for="lname">Tài khoản</label>
@@ -40,13 +40,29 @@ const Contact = {
                     <label for="subject">Lời nhắn</label>
                     <textarea id="subject" name="subject" placeholder="Lời nhắn của bạn.."
                         style="height:170px"></textarea>
-                    <input type="submit" value="Gửi">
                 </form>
+                <button onclick="kiemTra()">Gửi </button>
+                <p id="tb1"></p>
             </div>
         </div>
     </div>
 </div>
                 </div>
+                <script>
+                    function kiemTra() {
+                        var x = document.getElementById("fname");
+                        var y = document.getElementById("lname");
+                        var z = document.getElementById("country");
+                        var a = document.getElementById("subject");
+                        document.getElementById("tb1").innerHTML = "Gửi thành công ";
+                        if (fname.value == "" || /[a-zA-Z]/.test(fname) == false || fname.value.length < 5) {
+                        ok.innerHTML = "Tên Không Được Có Số Hay Kí Tự ( < 5 KT)";
+                        fname.focus();
+                        fname.style.border = "1px solid red";
+            }
+                    }
+                </script>
+                
                 ${Footer.render()}
             </div>
         `;

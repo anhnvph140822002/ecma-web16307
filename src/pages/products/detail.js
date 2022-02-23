@@ -1,5 +1,6 @@
 import toastr from "toastr";
-import { get } from "../../api/product";
+import { get } from "../../api/posts";
+// import { get } from "../../api/product";
 import { addToCart } from "../../utils/cart";
 import "toastr/build/toastr.min.css";
 import Header from "../../components/header";
@@ -8,7 +9,7 @@ import Footer from "../../components/footer";
 
 const ProductDetailPage = {
     async render(id) {
-        const { data: product } = await get(id);
+        const { data: posts } = await get(id);
         return /* html */`
         <div class="max-w-5xl mx-auto">
                 <div id="header">
@@ -22,13 +23,13 @@ const ProductDetailPage = {
                 <div class="row">
                     <div class="col-2">
                         <a href="">
-                            <img src="${product.img}" alt="" />
+                            <img src="${posts.img}" alt="" />
                         </a>
                     </div>
                     <div class="col-2">
                         <p>Home / SmartPhone</p>
-                        <h1 class="my-3">${product.title}</h1>
-                        <p>${product.price}</p>
+                        <h1 class="my-3">${posts.title}</h1>
+                        <p>${posts.price}</p>
                         <select>
                             <option>option</option>
                             <option>64G</option>
@@ -38,9 +39,9 @@ const ProductDetailPage = {
                             <option>1TB</option>
                             </select>
                             <input type="number" id="inputValue" class="border border-black"/>
-                            <button data-id="${product.id}" id="btnAddToCart">Add to cart</button>
+                            <button data-id="${posts.id}" id="btnAddToCart">Add to cart</button>
                             <br>
-                            <p>${product.desc}</p>
+                            <p>${posts.desc}</p>
                     </div>
                 </div>
             </div>

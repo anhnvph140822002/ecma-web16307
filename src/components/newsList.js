@@ -26,9 +26,9 @@ const NewList = {
             <div class="row grid grid-cols-4">
                 ${response.data.map((post) => `
                 <div class="col-4 boder p-3 ">
-                    <a href="">
-                        <img src="${post.img}" alt="" />
-                    </a>
+                <a href="/products/${post.id}">
+                <img src="${post.img}" alt="" />
+            </a>
                     <h3 class="my-3"><a href="" class="font-semibold text-lg text-orange-500 ">${post.title}</a></h3>
                     <div class="rating">
                         <i class="fa fa-star"></i>
