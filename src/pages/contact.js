@@ -40,8 +40,9 @@ const Contact = {
                     <label for="subject">Lời nhắn</label>
                     <textarea id="subject" name="subject" placeholder="Lời nhắn của bạn.."
                         style="height:170px"></textarea>
+                        <button onclick="kiemTra()">Gửi </button>
                 </form>
-                <button onclick="kiemTra()">Gửi </button>
+                
                 <p id="tb1"></p>
             </div>
         </div>
@@ -50,7 +51,7 @@ const Contact = {
                 </div>
                 <script>
                     function kiemTra() {
-                        var x = document.getElementById("fname");
+                        var fname = document.getElementById("fname");
                         var y = document.getElementById("lname");
                         var z = document.getElementById("country");
                         var a = document.getElementById("subject");
