@@ -15,7 +15,7 @@ const AdminEditposts = {
             <div class="news">
                     <form id="formEditPost">
                         <input type="text" class="border border-black" id="title-post" placeholder="Title Post" value="${data.title}"/><br />
-                        <img src="${data.img}" />
+                        <img  style="width: 250px;" src="${data.img}" />
                         <input type="file" class="border border-black" id="img-post" /> <br />
                         <input type="text" class="border border-black" id="price-post" placeholder="price" value="${data.price}"/><br />
                         <input type="text" class="border border-black" id="soluong-post" placeholder="Quantity" value="${data.soluong}"/><br />
